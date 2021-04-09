@@ -7,3 +7,51 @@
 	box-sizing: border-box;
 	font-family: 'Montserrat', sans-serif;
 }
+#root {
+
+	display: flex;
+	/*justify-content: space-between;*/
+	background: burlywood;
+	flex-wrap: wrap;
+}
+.card {
+	margin: 10px 10px;
+	position: relative;
+
+}
+.card img {
+	width: calc(100vw / 5 - 20px);
+	height: calc(100vw / 5 - 20px);
+}
+.card .overlay {
+	position: absolute;
+	background-color: rgba(0,0,0,0.8);
+	width: calc(100vw / 5 - 20px);
+	height: calc(100vw / 5 - 20px);
+	z-index: 1;
+	top: 0;
+	color: #fff;
+	display: none;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+.card:hover .overlay {
+	display: flex;
+}
+.overlay p {
+	padding-left: 50px;
+}
+.titolo {
+	color: red;
+	font-size: 20px;
+}
+.autore {
+	font-size: 16px;
+}
+.anno {
+	font-size: 14px;
+}
+.genere {
+	font-size: 12px;
+}
