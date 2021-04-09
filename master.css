@@ -12,10 +12,15 @@
 	flex-direction: column;
 	align-items: center;
 	/*justify-content: space-between;*/
-	background: burlywood;
+
+
+}
+select {
+	font-size: 20px;
 
 }
 main {
+	background: burlywood;
 	display: flex;
 	flex-wrap: wrap;
 }
