@@ -16,15 +16,23 @@
     </head>
     <body>
         <div id="root">
-            <div v-for="albums in album" class="card">
-                <img :src="albums.poster" alt="album cover">
-                <div class="overlay">
-                    <p class="titolo">{{albums.title}}</p>
-                    <p class="autore">{{albums.author}}</p>
-                    <p class="anno">{{albums.year}}</p>
-                    <p class="genere">{{albums.genre}}</p>
+            <nav>
+                <select name="album" id="selAlbum">
+                    <option v-for="genere in generi" value="">{{genere}}</option>
+                </select>
+            </nav>
+
+            <main>
+                <div v-for="albums in album" class="card">
+                    <img :src="albums.poster" alt="album cover">
+                    <div class="overlay">
+                        <p class="titolo">{{albums.title}}</p>
+                        <p class="autore">{{albums.author}}</p>
+                        <p class="anno">{{albums.year}}</p>
+                        <p class="genere">{{albums.genre}}</p>
+                    </div>
                 </div>
-            </div>
+            </main>
         </div>
         
         <!-- axios -->
