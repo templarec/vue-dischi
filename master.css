@@ -11,7 +11,8 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	/*justify-content: space-between;*/
+	background-color: #9c9c9c;
+	height: 100vh;
 
 
 }
@@ -21,13 +22,13 @@ select {
 }
 main {
 	margin: 0 10px;
-	background: #3deaa7;
+	background: #383b38;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	border-radius: 10px;
-	box-shadow: 5px 5px 10px #333;
+	box-shadow: 5px 5px 10px #000000;
 	padding: 10px;
 }
 .card {
