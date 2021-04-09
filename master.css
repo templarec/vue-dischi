@@ -24,6 +24,8 @@ main {
 	background: burlywood;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 	border-radius: 10px;
 	box-shadow: 5px 5px 10px #333;
 }
@@ -33,13 +35,13 @@ main {
 
 }
 .card img {
-	width: calc(100vw / 5 - 30px);
-	height: calc(100vw / 5 - 30px);
+	width: calc(100vw / 5 - 25px);
+	height: calc(100vw / 5 - 25px);
 }
 .card .overlay {
 	position: absolute;
-	width: calc(100vw / 5 - 30px);
-	height: calc(100vw / 5 - 30px);
+	width: calc(100vw / 5 - 25px);
+	height: calc(100vw / 5 - 25px);
 	z-index: 1;
 	top: 0;
 	color: #fff;
